@@ -10,8 +10,11 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+const tail = function(array) {
+  array.shift()
+  return array
+};
+
 // TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("Bootcamp", "Bootcamp");
-assertEqual(1, 2);
+const result = tail(["Hello", "Lighthouse", "Labs"]);
+assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
