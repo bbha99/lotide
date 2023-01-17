@@ -1,7 +1,6 @@
 // FUNCTION IMPLEMENTATION
 const head = function(array) {
-  const firstElement = array.shift();
-  return firstElement;
+  return array[0];
 };
 
 module.exports = head;
