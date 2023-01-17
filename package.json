@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@branha99/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lotide library of functions",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/bbha99/lotide.git"
   },
-  "author": "",
+  "author": "Brandon Ha",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bbha99/lotide/issues"
