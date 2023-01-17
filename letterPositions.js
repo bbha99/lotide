@@ -1,24 +1,4 @@
-// FUNCTION IMPLEMENTATION
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected) === true) {
-    console.log("true")
-  } else {
-    console.log("false")
-  }
-};
+const assertArraysEqual = require("./assertArraysEqual");
 
 const letterPositions = function(sentence) {
   const result = {};
@@ -38,5 +18,7 @@ const letterPositions = function(sentence) {
   return result;
 };
 
-console.log(letterPositions("lighthouse in the house"))
-assertArraysEqual(letterPositions("hello").e, [1]);
+module.exports = letterPositions;
+
+// console.log(letterPositions("lighthouse in the house"))
+// assertArraysEqual(letterPositions("hello").e, [1]);
